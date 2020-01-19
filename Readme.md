@@ -1,5 +1,7 @@
 ## GraphQL Example One With Express
 
+![](https://www.cloudcms.com/documentation/graphql/graphql-logo.png)
+
 #### Cara Menjalankan dan Pengunaan:
 **Sebelum** anda menjalan project ini silahkan install `dependencies packages` terlebih dahulu dengan cara `npm install`, anda juga harus memeliki koneksi `internet` dikarenakan nanti akan mendowload `packages` nya sesuai yang tertera di `package.json`, setelah selesai menginstall silahkan jalankan project ini dengan cara `npm run dev ` atau `npm run start`
 
