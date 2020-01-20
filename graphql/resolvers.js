@@ -331,25 +331,25 @@ const Resolvers = {
         },
 
         //result all data mahasiswa
-        findAllMahasiswa: async(root, args, context) => {
+        findAllMahasiswa: async({ limit }, args, context) => {
 
             //result all data to display
             return await Mahasiswa.find({})
-                .populate('ta dp', 'judul programming type nama lulusan gelar');
+                .populate('ta dp', 'judul programming type nama lulusan gelar').limit(limit)
         },
 
         //result all data dosen
-        findAllDosen: async(root, args, context) => {
+        findAllDosen: async({ limit }, args, context) => {
 
             //result all data to display
-            return await Dosen.find({});
+            return await Dosen.find({}).limit(limit);
         },
 
         //result all data skripsi
-        findAllSkripsi: async(root, args, context) => {
+        findAllSkripsi: async({ limit }, args, context) => {
 
             //result all data to display
-            return Skripsi.find({});
+            return Skripsi.find({}).limit(limit);
         },
 
         //hapus data mahasiswa
