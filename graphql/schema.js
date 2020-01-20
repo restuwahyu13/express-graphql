@@ -4,9 +4,9 @@ const Schema = buildSchema(`
 
   type Query {
 
-     findAllDosen : [Dosen!]!
-     findAllSkripsi : [Skripsi!]!
-     findAllMahasiswa: [Mahasiswa!]!
+     findAllDosen(limit: Int!) : [Dosen!]!
+     findAllSkripsi(limit: Int!) : [Skripsi!]!
+     findAllMahasiswa(limit: Int!): [Mahasiswa!]!
      
      findOneMahasiswa(id: ID!): Mahasiswa
      findOneDosen(id: ID!) : Dosen
